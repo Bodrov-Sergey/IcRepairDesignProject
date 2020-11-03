@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;1,400&family=Yeseva+One&display=swap" rel="stylesheet">
 
     <!-- иконка 16*16 пикселей для обозначения сайта -->
-    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="shortcut icon" type="image/x-icon" href="#">
 </head>
 
 <body>
@@ -29,19 +29,19 @@
         <header class="header">
             <div class="container header__container">
                 <div class="header__logo">IC "Repair Design Project"</div>
-                <nav class="header__navigation navigation">
+                <nav class="header-navigation navigation">
                     <ul class="navigation__list">
-                        <li class="navigation__item"><a href="" class="navigation__link">home</a>
+                        <li class="navigation__item"><a href="#" class="navigation__link">home</a>
                         </li>
-                        <li class="navigation__item"><a href="" class="navigation__link">projects</a>
+                        <li class="navigation__item"><a href="#" class="navigation__link">projects</a>
                         </li>
-                        <li class="navigation__item"><a href="" class="navigation__link">measurement</a>
+                        <li class="navigation__item"><a href="#" class="navigation__link">measurement</a>
                         </li>
-                        <li class="navigation__item"><a href="" class="navigation__link">team</a>
+                        <li class="navigation__item"><a href="#" class="navigation__link">team</a>
                         </li>
-                        <li class="navigation__item"><a href="" class="navigation__link">reviews</a>
+                        <li class="navigation__item"><a href="#" class="navigation__link">reviews</a>
                         </li>
-                        <li class="navigation__item"><a href="" class="navigation__link">contacts</a>
+                        <li class="navigation__item"><a href="#" class="navigation__link">contacts</a>
                         </li>
                     </ul>
                 </nav>
@@ -53,17 +53,64 @@
         </header>
         <main class="content">
             <section class="content__home home">
-                <div class="container home__container">
+                <div class="home__container container">
                     <h1 class="home__title title"><span class="title__white-part">Turnkey Repair in the <br>city of</span> Rostov-on-Don</h1>
                     <p class="home__description">Get ready-made turnkey repairs on time with work time saving up to 45 days and 20% from cost of materials due to the organization of work</p>
 
                     <button class="home__button-calc button">CALCULATE THE COST</button>
-                    <a href="" class="home__button-submit">SUBMIT YOUR APPLICATION</a>
+                    <a href="" class="home__button-submit"><span class="home__hidden">SUBMIT YOUR </span>APPLICATION</a>
 
                 </div>
                 <div class="home__darkness"></div>
             </section>
-
+            <section class="content__projects projects">
+                <div class="projects__container container">
+                    <nav class="projects__nav nav">
+                        <ul class="nav__list">
+                            <span class="icon-arrowL nav__arrow nav__arrow_L"></span>
+                            <li class="nav__item nav__item_active title nav__item_admiral">Rostov-on-Don, Admiral</li>
+                            <li class="nav__item title nav__item_thieves">Sochi Thieves</li>
+                            <li class="nav__item title nav__item_patriotic">Rostov-on-Don Patriotic</li>
+                            <span class="icon-arrowR nav__arrow nav__arrow_R"></span>
+                        </ul>
+                    </nav>
+                    <h2 class="projects__title title">Completed<br>projects</h2>
+                    <p class="projects__description">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction
+                        <br>market we have made happy more than 1000 families</p>
+                    <div class="projects__criteria criteria projects__criteria_city">
+                        <h3 class="criteria__title title">City:</h3>
+                        <div class="criteria__description">Rostov-on-Don
+                            <br>LCD admiral</div>
+                    </div>
+                    <div class="projects__criteria criteria projects__criteria_area">
+                        <h3 class="criteria__title title">apartment area:</h3>
+                        <div class="criteria__description">81 m<sup>2</sup>
+                        </div>
+                    </div>
+                    <div class="projects__criteria criteria projects__criteria_time">
+                        <h3 class="criteria__title title">Repair time:</h3>
+                        <div class="criteria__description">3.5 months</div>
+                    </div>
+                    <div class="projects__criteria criteria projects__criteria_cost">
+                        <h3 class="criteria__title title">Repair Cost:</h3>
+                        <div class="criteria__description">Upon request</div>
+                    </div>
+                    <div class="projects__control control">
+                        <div class="control__container">
+                            <div class="control__arrow control__arrow_left icon-arrowL"></div>
+                            <div class="control__point control__point_active icon-point"></div>
+                            <div class="control__point icon-point"></div>
+                            <div class="control__point icon-point"></div>
+                            <div class="control__arrow control__arrow_right icon-arrowR"></div>
+                        </div>
+                    </div>
+                    <div class="projects__slider slider">
+                        <span class="icon-rightArrowSlide slider__Arrow slider__Arrow_right"></span>
+                        <span class="icon-leftArrowSlide slider__Arrow slider__Arrow_left"></span>
+                        <img src="image/projects/admiral.jpg" alt="hotel" class="slider__image">
+                    </div>
+                </div>
+            </section>
         </main>
         <footer></footer>
     </div>
