@@ -248,6 +248,7 @@ font-family: 'Yeseva One', cursive;
     border-bottom-style: solid;
     padding-bottom: 8px;
     border-radius: 0;
+    -webkit-border-radius:0px;
     border-color: #363636;
     color: #363636;
     width: 100%;
