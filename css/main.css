@@ -120,7 +120,7 @@ font-family: 'Yeseva One', cursive;
 .icon-pig:before {
     content: '\0043';
 }
-.icon-hummer&wranch:before {
+.icon-hummer:before {
     content: '\0044';
 }
 .icon-instagram:before {
@@ -205,6 +205,7 @@ font-family: 'Yeseva One', cursive;
 }
 .sublogo-container {
     position: relative;
+    display: inline-block;
     margin: 0 auto;
 }
 .sublogo-container::before {
@@ -685,6 +686,93 @@ MEASUREMENT
 }
 /*
 ************************************
+TEAM
+************************************
+*/
+.team__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+}
+.content__team {
+    padding-top: 148px;
+}
+.team__subtitle {
+    margin-bottom: 13px;
+}
+.team__sublogo {
+    margin-bottom: 31px;
+}
+.team__flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.types__item {
+    max-width: 392px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.types__item:nth-child(3n){
+    margin-right: 0;
+}
+.types__image {
+    width: 100%;
+}
+.types__description {
+    background: #FFFFFF;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+    padding: 25px 31px 26px;
+    width: 330px;
+    margin-top: -127px;
+}
+.types__title {
+    font-family: Yeseva One;
+    font-size: 18px;
+    line-height: 25px;
+    color: #363636;
+    margin-bottom: 13px;
+}
+.types__list {
+    color: #959595;
+    margin-bottom: 23px;
+}
+.types__characteristic {
+    list-style: disc;
+    list-style-position: inside;
+    font-size: 13px;
+    line-height: 27px;
+}
+.types__button{
+    align-self: flex-start;
+    margin-left: 31px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    margin-top: -26px;
+    font-family: Yeseva One;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.types__button_redecore{
+    padding-left: 22px;
+    padding-right: 22px;
+}
+.types__button_overhaul{
+    padding-left: 19px;
+    padding-right: 19px;
+}
+.types__button_design{
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+/*
+************************************
 MEDIA
 ************************************
 */
@@ -791,6 +879,22 @@ MEDIA
         margin-right: auto;
         margin-left: auto;
     }
+    .types__item:nth-child(1){
+        margin-left: 30px;
+    }
+    .types__item{
+        margin-bottom: 59px;
+    }
+    .types__item:last-child{
+        margin-bottom: 0;
+    }
+    .content__team {
+        padding-top: 58px;
+    }
+    .team__sublogo{
+        margin-bottom: 20px;
+    }
+
 }
 @media (max-width: 1120px) {
     .header__button {
@@ -798,6 +902,12 @@ MEDIA
     }
     .header__phone {
         margin: 0;
+    }
+    .types__item:nth-child(2n){
+        margin-right: 0;
+    }
+    .types__item:nth-child(1){
+        margin-left: 0px;
     }
 }
 @media (max-width: 900px) {
@@ -822,6 +932,19 @@ MEDIA
         margin-right: auto;
         margin-left: auto;
         padding: 0;
+    }
+}
+@media (max-width: 850px){
+    .types__item{
+        margin-right: 0;
+    }
+    .team__flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .types__button{
+        margin-left: 0;
     }
 }
 @media (max-width: 768px) {
@@ -952,6 +1075,9 @@ MEDIA
         color: #FFFFFF;
         background: #131313;
     }
+    .types__item {
+        align-items: flex-start;
+    }
 }
 @media (max-width: 715px) {
     .projects__criteria_city {
@@ -1035,6 +1161,29 @@ MEDIA
     .content__measurement {
         margin-top: -950px;
     }
+    .types__description {
+        padding: 21px 31px 20px;
+    }
+    .types__button{
+        margin-top: -20px;
+    }
+    .types__title {
+        margin-bottom: 10px;
+        font-size: 15px;
+        line-height: 21px;
+    }
+    .types__list{
+        margin-bottom: 17px;
+    }
+    .types__characteristic{
+        font-size: 13px;
+        line-height: 22px;
+    }
+    .types__description{
+        margin-top: -142px;
+        width: 270px;
+    }
+
 
 
 }
