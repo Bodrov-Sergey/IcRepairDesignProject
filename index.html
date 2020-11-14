@@ -147,7 +147,8 @@
             <section class="content__team team">
                 <div class="team__container container">
                     <h2 class="team__subtitle subtitle">TYPES OF REPAIR</h2>
-                    <div class="sublogo-container"><span class="sublogo icon-hummer"></span></div>
+                    <div class="sublogo-container"><span class="sublogo icon-hummer"></span>
+                    </div>
                     <div class="team__flex-container types">
                         <div class="types__item">
                             <img src="image/team/decorating.jpg" alt="decore" class="types__image">
@@ -179,7 +180,8 @@
                                     <li class="types__characteristic">Replacing doors</li>
                                 </ul>
                             </div>
-                            <button class="types__button types__button_overhaul button">from 1800 rub / m2</button>                        </div>
+                            <button class="types__button types__button_overhaul button">from 1800 rub / m2</button>
+                        </div>
                         <div class="types__item">
                             <img src="image/team/designer.jpg" alt="designer repair" class="types__image">
                             <div class="types__description">
@@ -194,13 +196,24 @@
                                     <li class="types__characteristic">Replacing doors</li>
                                 </ul>
                             </div>
-                            <button class="types__button types__button_design button">from 4000 rub / m2</button>                        </div>
+                            <button class="types__button types__button_design button">from 4000 rub / m2</button>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
         <footer></footer>
-        </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="jquery.matchHeight.js" type="text/javascript"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $('.types__list').matchHeight();
+    });
+</script>
+
 </body>
 
 </html>
