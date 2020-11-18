@@ -82,6 +82,9 @@ h6 {
 a {
     transition: 0.2s ease-out;
 }
+p {
+    margin: 0;
+}
 /*
 *************************************
 WORK START
@@ -156,6 +159,7 @@ font-family: 'Yeseva One', cursive;
 .icon-pause:before {
     content: '\004f';
 }
+
 /*REUSE*/
 
 .button {
@@ -1032,7 +1036,101 @@ FANTASIES
 REVIEWS
 ************************************
 */
-
+.content__reviews{
+    padding-top: 110px;
+}
+.reviews__container{
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+.reviews__sublitle {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+.reviews__sublogo {
+    margin-bottom: 25px;
+}
+.reviews__description {
+    font-size: 18px;
+    line-height: 29px;
+    color: #363636;
+    text-align: center;
+    margin-bottom: 39px;
+}
+.reviews__flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.clients__item {
+    max-width: 376px;
+    margin-bottom: 54px;
+}
+.clients__item:nth-child(3n+2) {
+    margin: 0 54px 54px;
+}
+.clients__content {
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+    background: #FFFFFF;
+    padding: 20px 32px 90px 20px;
+}
+.clients__personal {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.clients__photo {
+    border-radius: 50%;
+    margin-right: 25px;
+}
+.clients__name {
+    font-family: Yeseva One;
+    font-size: 18px;
+    line-height: 21px;
+    color: #181818;
+}
+.clients__text {
+    font-size: 13px;
+    color: #959595;
+    line-height: 23px;
+}
+.clients__characteristic {
+    display: flex;
+    background: #E3B873;
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+    color: white;
+    max-width: 294px;
+    margin-top: -27px;
+}
+.clients__footage {
+    display: flex;
+    align-items: center;
+    width: 49%;
+    padding: 12px 14px 12px 14px;
+    border-right: 0.75px;
+    border-style: solid;
+    border-color: #FFFFFF
+}
+.clients__icon {
+    margin-right: 16px;
+}
+.clients__description {
+    font-family: Yeseva One;
+    font-size: 17px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.clients__timing {
+    display: flex;
+    align-items: center;
+    width: 51%;
+    padding: 12px 0px 12px 14px;
+}
 /*
 ************************************
 MEDIA
@@ -1157,6 +1255,9 @@ MEDIA
     }
     .request__body {
         padding-left: 0;
+    }
+    .clients__item {
+        margin: 0 54px 54px;
     }
 }
 @media (max-width: 1120px) {
@@ -1378,6 +1479,7 @@ MEDIA
     .types__item {
         align-items: flex-start;
     }
+
 }
 @media (max-width: 767px){
     .request{
@@ -1487,6 +1589,33 @@ MEDIA
     .fantasies__style{
         font-size: 22px;
     }
+    .clients__item{
+        margin: 0 0 20px;
+    }
+    .clients__item:nth-child(3n+2) {
+        margin: 0 0 20px;
+    }
+    .content__reviews{
+        padding-top: 55px
+    }
+    .reviews__sublitle{
+        margin-bottom: 5px;
+    }
+    .reviews__sublogo{
+        margin-bottom: 0;
+    }
+    .reviews__description{
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .clients__personal{
+        margin-bottom:10px;
+    }
+    .clients__content{
+        padding: 10px 10px 40px;
+
+    }
+
 
 
 
