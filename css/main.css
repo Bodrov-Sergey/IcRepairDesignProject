@@ -1024,6 +1024,9 @@ FANTASIES
     height: 642px;
     background-image: url(../image/team/fantasies/American%20classic4.jpg);
 }
+.fantasies__slider-container{
+    display: none;
+}
 /*
 ************************************
 MEDIA
@@ -1180,6 +1183,12 @@ MEDIA
     }
     .content__request{
         padding-top: 48px;
+    }
+    .sample__colunmn_2 {
+        display: none;
+    }
+    .sample__colunmn_1 {
+        margin-right: 0;
     }
 
 }
@@ -1424,6 +1433,10 @@ MEDIA
         line-height: 19px;
         box-shadow: none;
     }
+    .content__advice{
+        margin-bottom: 55px;
+        padding-bottom: 30px;
+    }
 
 
 
@@ -1450,6 +1463,20 @@ MEDIA
     .content__measurement {
         margin-top: -1100px;
     }
+    .sample__colunmn{
+        display: none;
+    }
+    .fantasies__container{
+        flex-direction: column;
+    }
+    .fantasies__slider-container {
+        display: block;
+        position: relative;
+    }
+    .fantasies__image {
+        width: 100%;
+    }
+
 }
 @media (max-width: 650px) {
     .projects {
