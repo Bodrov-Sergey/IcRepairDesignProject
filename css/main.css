@@ -901,6 +901,7 @@ REQUEST
     line-height: 21px;
 }
 .content__advice {
+    margin-bottom: 242px;
 }
 .advice__container {
     display: flex;
@@ -908,7 +909,6 @@ REQUEST
     padding-right: 42px;
     align-items: center;
 }
-
 .advice__sublogo {
     display: inline-block;
     margin-right: 41px;
@@ -926,6 +926,103 @@ REQUEST
     color: #E3B873;
     text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
     padding-right: 50px;
+}
+/*
+************************************
+FANTASIES
+************************************
+*/
+.content__fantasies {
+    background: rgba(0, 0, 0, 0.7);
+    background-image: url(../image/bg/fantasiesBG/AmericanClassic.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.fantasies__darkness {
+    background: linear-gradient(109.8deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
+}
+.fantasies__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.fantasies__content {
+    padding: 138px 20px 98px 0;
+
+}
+.fantasies__title {
+    letter-spacing: 0em;
+    font-size: 27px;
+    line-height: 33px;
+    margin-bottom: 47px;
+
+}
+.fantasies__list {
+
+}
+.fantasies__item {
+    margin-bottom: 25px;
+}
+.fantasies__item:last-child{
+    margin-bottom: 0;
+}
+.fantasies__style{
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.fantasies__style_active{
+    color: #E3B873;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #E3B873;
+    line-height: 25px;
+}
+.fantasies__photos {
+    display: flex;
+}
+.sample__colunmn {
+    display: flex;
+    flex-direction: column;
+}
+.sample__colunmn_1 {
+    margin-right: 43px;
+    margin-top: -41px;
+    margin-bottom: -41px;
+}
+.sample__colunmn_2 {
+    margin-top: -113px;
+}
+.sample__image {
+    width: 354px;
+    background-color: rgba(0, 0, 0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.sample__image:first-child{
+    margin-bottom: 39px;
+}
+.sample__image_1 {
+    background-image: url(../image/team/fantasies/American%20classic1.jpg);
+    height: 558px;
+}
+.sample__image_2 {
+    background-image: url(../image/team/fantasies/American%20classic2.jpg);
+    height: 349px;
+}
+.sample__image_3 {
+    height: 275px;
+    background-image: url(../image/team/fantasies/American%20classic3.jpg);
+}
+.sample__image_4 {
+    height: 642px;
+    background-image: url(../image/team/fantasies/American%20classic4.jpg);
 }
 /*
 ************************************
