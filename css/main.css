@@ -1150,6 +1150,137 @@ REVIEWS
 }
 /*
 ************************************
+CONTACTS
+************************************
+*/
+.content__contacts {
+    background-image: url(../image/bg/contacts.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-bottom: 64px;
+
+}
+.contacts__darkness{
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+}
+.contacts__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 188px;
+}
+.contacts__form {
+    background: #131313;
+    padding: 34px 181px;
+    width: 883px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -222px;
+    margin-bottom: 52px;
+}
+.questions__subtitle {
+    color: white;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 46px;
+    width: 100%;
+}
+.questions__name {
+    width: 50%;
+    padding-right: 29px;
+    margin-bottom: 49px;
+}
+.questions__label {
+    color: rgba(255, 255, 255, 0.5);
+}
+.questions__input {
+    background-color: #131313;
+    color: white;
+}
+.qestions__phone {
+    width: 50%;
+    padding-left: 29px;
+    margin-bottom: 49px;
+}
+.questions__question {
+    width: 100%;
+    margin-bottom: 49px;
+}
+.questions__checkbox {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.questions__checkbox-label_questions {
+    color: white;
+    padding-left: 10px;
+}
+.questions__button-container {
+    width: 100%;
+    text-align: center;
+}
+.questions__button {
+    padding: 19px 74px;
+    font-size: 13px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #FFFFFF;
+    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.1);
+}
+.contacts__ifo {
+}
+.contacts__adress {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+}
+.contacts__tel {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 26px;
+}
+.contacts__link {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 26px;
+}
+.contacts__mail {
+    margin-right: 15px;
+    padding: 8px 9px;
+    line-height: 12px;
+    border-radius: 50%;
+    background: #E3B873;
+    color: white;
+
+}
+.contacts__inst {
+    padding: 8px 9px;
+    line-height: 12px;
+    border-radius: 50%;
+    background: #E3B873;
+    color: white;
+}
+.question__map-container {
+    position: relative;
+}
+.map__template {
+    width: 100%;
+}
+.map__yandexmap{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+/*
+************************************
 MEDIA
 ************************************
 */
