@@ -1632,6 +1632,9 @@ MEDIA
         padding: 10px 10px 40px;
 
     }
+    .reviews__bg{
+        display: none;
+    }
 
 
 
