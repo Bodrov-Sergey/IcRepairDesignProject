@@ -1407,6 +1407,12 @@ MEDIA
     .clients__item {
         margin: 0 54px 54px;
     }
+    .contacts__form{
+        margin-top: -182px;
+    }
+    .content__contacts{
+        padding-bottom: 24px;
+    }
 }
 @media (max-width: 1120px) {
     .header__button {
@@ -1458,6 +1464,73 @@ MEDIA
     .characteristic__description_01{
         width: 230px;
     }
+    .content__contacts {
+        background-image: none;
+        background: #131313;
+    }
+    .contacts__darkness{
+        display: none;
+    }
+    .contacts__form {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .reviews__bg{
+        display: none;
+    }
+    .contacts__form {
+        margin-top: 0;
+        padding: 20px 0 0;
+        order: 1;
+    }
+    .questions__subtitle{
+        margin-bottom: 15px;
+    }
+    .questions__name{
+        margin-bottom: 15px;
+    }
+    .qestions__phone{
+        margin-bottom: 15px;
+    }
+    .questions__question{
+        margin-bottom: 15px;
+    }
+    .questions__checkbox{
+        margin-bottom: 15px;
+    }
+    .contacts__adress{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .contacts__tel{
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 10px;
+
+    }
+    .questions__checkbox-label_questions{
+        font-size: 11px;
+    }
+    .questions__button{
+        padding: 10px 60px;
+    }
+    .contacts__link {
+        margin-bottom: 15px;
+    }
+    .questions__checkbox{
+        margin-bottom: 10px;
+    }
+    .map{
+        order: 2;
+        margin-bottom: 10px;
+    }
+    .contacts__ifo{
+        order: 3;
+    }
+    .contacts__link{
+        margin-bottom: 0;
+    }
+
 }
 @media (max-width: 900px) {
     .header-navigation {
@@ -1897,6 +1970,15 @@ MEDIA
         margin-top: -142px;
         width: 270px;
     }
+    .questions__name{
+        padding-right: 0;
+        width: 100%
+    }
+    .qestions__phone{
+        padding-left: 0;
+        width: 100%;
+    }
+
 }
 @media (max-width: 450px) {
     .projects {
