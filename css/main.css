@@ -1281,6 +1281,20 @@ CONTACTS
 }
 /*
 ************************************
+FOOTER
+************************************
+*/
+
+.footer {
+    position: relative;
+    background-color: #131313;
+    color: #FFFFFF;
+    height: 83px;
+    display: flex;
+    align-items: center;
+}
+/*
+************************************
 MEDIA
 ************************************
 */
@@ -1554,6 +1568,9 @@ MEDIA
         margin-right: auto;
         margin-left: auto;
         padding: 0;
+    }
+    .footer {
+        display: none;
     }
 }
 @media (max-width: 850px) {
