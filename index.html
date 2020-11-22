@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>IC "Repair Design Project"</title>
     <!-- Отображать стр в масштабе 100% -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;1,400&family=Yeseva+One&display=swap" rel="stylesheet">
 
     <!-- иконка 16*16 пикселей для обозначения сайта -->
-    <link rel="shortcut icon" type="image/x-icon" href="#">
+    <link rel="shortcut icon" type="image/x-icon" href="image/favicon/favicon.png">
 </head>
 
 <body>
@@ -31,17 +31,17 @@
                 <div class="header__logo">IC "Repair Design Project"</div>
                 <nav class="header-navigation navigation">
                     <ul class="navigation__list">
-                        <li class="navigation__item"><a href="#" class="navigation__link">home</a>
+                        <li class="navigation__item"><a href="#home" class="navigation__link">home</a>
                         </li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">projects</a>
+                        <li class="navigation__item"><a href="#projects" class="navigation__link">projects</a>
                         </li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">measurement</a>
+                        <li class="navigation__item"><a href="#measurement" class="navigation__link">measurement</a>
                         </li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">team</a>
+                        <li class="navigation__item"><a href="#team" class="navigation__link">team</a>
                         </li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">reviews</a>
+                        <li class="navigation__item"><a href="#reviews" class="navigation__link">reviews</a>
                         </li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">contacts</a>
+                        <li class="navigation__item"><a href="#contacts" class="navigation__link">contacts</a>
                         </li>
                     </ul>
                 </nav>
@@ -52,18 +52,18 @@
             </div>
         </header>
         <main class="content">
-            <section class="content__home home">
+            <section class="content__home home" id="home">
                 <div class="home__container container">
                     <h1 class="home__title title"><span class="title__white-part">Turnkey Repair in the <br>city of</span> Rostov-on-Don</h1>
                     <p class="home__description">Get ready-made turnkey repairs on time with work time saving up to 45 days and 20% from cost of materials due to the organization of work</p>
 
                     <button class="home__button-calc button">CALCULATE THE COST</button>
-                    <a href="" class="home__button-submit"><span class="home__hidden">SUBMIT YOUR </span>APPLICATION</a>
+                    <span class="home__button-submit"><span class="home__hidden">SUBMIT YOUR </span>APPLICATION</span>
 
                 </div>
                 <div class="darkness"></div>
             </section>
-            <section class="content__projects projects">
+            <section class="content__projects projects" id="projects">
                 <div class="projects__container container">
                     <nav class="projects__nav nav">
                         <ul class="nav__list">
@@ -111,7 +111,7 @@
                     </div>
                 </div>
             </section>
-            <section class="content__measurement measurement">
+            <section class="content__measurement measurement" id="measurement">
                 <div class="measurement__container container">
                     <h2 class="measurement__sublitle subtitle">online control</h2>
                     <div class="measurement__sublogo sublogo-container"><span class=" sublogo icon-Cam"></span>
@@ -144,7 +144,7 @@
                     </form>
                 </div>
             </section>
-            <section class="content__team team">
+            <section class="content__team team" id="team">
                 <div class="team__container container">
                     <h2 class="team__subtitle subtitle">TYPES OF REPAIR</h2>
                     <div class="sublogo-container team__sublogo"><span class="sublogo icon-hummer"></span>
@@ -303,7 +303,7 @@
                     </div>
                 </div>
             </section>
-            <section class="content__reviews reviews">
+            <section class="content__reviews reviews" id="reviews">
                 <div class="reviews__container container">
                     <h2 class="reviews__sublitle subtitle">our clients</h2>
                     <div class="reviews__sublogo sublogo-container"><span class="sublogo icon-hands"></span>
@@ -379,7 +379,7 @@
                 </div>
 
             </section>
-            <section class="content__contacts contacts">
+            <section class="content__contacts contacts" id="contacts">
                 <div class="contacts__darkness darkness"></div>
                 <div class="contacts__container container">
                     <form method="post" action="#" name="user__form" enctype="text/plain" autocomplete="off" class="contacts__form questions">
@@ -406,10 +406,10 @@
                     </form>
                     <div class="contacts__ifo">
                         <p class="contacts__adress title">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum</p>
-                        <p class="contacts__tel title">Tel +7 (928) 768 32 29</p>
+                        <p class="contacts__tel title">Tel <a href="tel:+79287683239" class="contacts__phone">+7 (928) 768-32-39</a></p>
                         <div class="contacts__link">
-                            <a href="#" class="contacts__mail icon-mail"></a>
-                            <a href="#" class="contacts__inst icon-instagram"></a>
+                            <a href="mailto:info@modernist.su" class="contacts__mail icon-mail"></a>
+                            <a href="https://www.instagram.com/decorum_rostov/" target="_blank" class="contacts__inst icon-instagram"></a>
                         </div>
                     </div>
                     <div class="question__map-container map">

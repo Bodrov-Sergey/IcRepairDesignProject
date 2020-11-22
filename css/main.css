@@ -415,6 +415,7 @@ HOME
     line-height: 15px;
     text-align: center;
     color: #FFFFFF;
+    cursor: pointer;
 }
 /*
 ***************************************************
@@ -591,6 +592,7 @@ MEASUREMENT
     height: auto;
     position: relative;
     margin-bottom: 98px;
+    cursor: pointer;
 }
 .measurement__iframe {
     position: absolute;
@@ -764,6 +766,7 @@ TEAM
     line-height: 25px;
     text-transform: uppercase;
     color: #FFFFFF;
+    cursor: auto;
 }
 .types__button_redecore {
     padding-left: 22px;
@@ -917,12 +920,11 @@ REQUEST
     display: inline-block;
     margin-right: 41px;
     font-size: 33px;
-    padding: 19px 19px;
+    padding: 19px 19px 16px 21px;
     border-radius: 50%;
     background: #E3B873;
     box-shadow: 0px 10px 20px rgba(237, 192, 120, 0.2);
     color: white;
-
 }
 .advice__description {
     font-size: 18px;
@@ -1245,6 +1247,9 @@ CONTACTS
     text-align: center;
     margin-bottom: 26px;
 }
+.contacts__phone{
+    color: #E3B873;
+}
 .contacts__link {
     display: flex;
     justify-content: center;
@@ -1363,9 +1368,6 @@ MEDIA
     .control__container {
         margin-bottom: 0;
     }
-    .projects {
-        padding-top: 36px;
-    }
     .criteria {
         margin-bottom: 27px;
     }
@@ -1408,9 +1410,6 @@ MEDIA
     }
     .types__item:last-child {
         margin-bottom: 0;
-    }
-    .content__team {
-        padding-top: 58px;
     }
     .team__sublogo {
         margin-bottom: 20px;
@@ -1553,6 +1552,9 @@ MEDIA
     .header {
         height: 57px;
     }
+    .projects {
+        padding-top: 36px;
+    }
     .measurement__video {
         width: 100%;
         margin-right: auto;
@@ -1568,6 +1570,9 @@ MEDIA
         margin-right: auto;
         margin-left: auto;
         padding: 0;
+    }
+    .content__team {
+        padding-top: 58px;
     }
     .footer {
         display: none;
@@ -1771,7 +1776,7 @@ MEDIA
     }
     .advice__sublogo{
         font-size: 20px;
-        padding: 12px;
+        padding: 12px 12px 10px 13.5px;
         margin-right: 20px;
     }
     .advice__description {
