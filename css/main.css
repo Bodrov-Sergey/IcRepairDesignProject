@@ -273,10 +273,42 @@ form * {
 .form__item_checkbox {
     display: block;
 }
-.checkbox {} .checkbox-label {
+.checkbox {
+    display: none;
+}
+.checkbox:checked + .checkbox-label::after {
+    transform: scale(1);
+}
+.checkbox-label {
     font-size: 14px;
     line-height: 23px;
     color: #181818;
+    display: inline-flex;
+    align-items: center;
+    width: 290px;
+    position: relative;
+    cursor: pointer;
+}
+.checkbox-label::before {
+    content: '';
+    align-self: flex-start;
+    flex: 0 0 18px;
+    height: 18px;
+    background-color: #E3B873;;
+    border-radius: 1px;
+    margin-right: 8px;
+}
+.checkbox-label::after {
+    transition: transform 0.4s ease-out 0s;
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 8px;
+    top: 5px;
+    left: 5px;
+    background-image: url(../image/favicon/mark.png);
+    transform: scale(0);
+
 }
 /*
 -*********************************
@@ -688,9 +720,6 @@ MEASUREMENT
 }
 .form__item_checkbox-measurement {
     order: 4;
-}
-.form__checkbox-label_measurement {
-    margin-left: 9px;
 }
 /*
 ************************************
@@ -1219,7 +1248,6 @@ CONTACTS
 }
 .questions__checkbox-label_questions {
     color: white;
-    padding-left: 10px;
 }
 .questions__button-container {
     width: 100%;
@@ -1911,6 +1939,9 @@ MEDIA
     }
 }
 @media (max-width: 550px) {
+    .checkbox-label{
+        width: 280px;
+    }
     .projects {
         padding-bottom: 980px;
     }
