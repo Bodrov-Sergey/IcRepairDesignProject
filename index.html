@@ -30,7 +30,7 @@
             <div class="container header__container">
                 <div class="header__logo">IC "Repair Design Project"</div>
                 <nav class="header-navigation navigation">
-                    <ul class="navigation__list">
+                    <ul class="navigation__list" id="nav">
                         <li class="navigation__item"><a href="#home" class="navigation__link">home</a>
                         </li>
                         <li class="navigation__item"><a href="#projects" class="navigation__link">projects</a>
@@ -450,6 +450,16 @@
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="jquery.matchHeight.js"></script>
+    <script type="text/javascript">
+ $(document).ready(function(){
+    $("#nav").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1000);
+    });
+});
+</script>
     <script>
         jQuery(document).ready(function($) {
             $('.types__list').matchHeight();
