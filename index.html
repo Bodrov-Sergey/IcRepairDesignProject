@@ -132,7 +132,7 @@
                         </div>
                         <div class="form__item form__item_phone-measurement">
                             <label for="measurement__phone" class="form__label label label_measurement">Phone</label>
-                            <input type="tel" class="input input_measurement" name="phone" id="measurement__phone"  placeholder="Your phone number:">
+                            <input type="tel" class="input input_measurement" name="phone" id="measurement__phone" placeholder="Your phone number:">
                         </div>
                         <div class="form__item form__item_button-measurement">
                             <button type="submit" class="form__button button">Submit</button>
@@ -450,16 +450,18 @@
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="jquery.matchHeight.js"></script>
-    <script type="text/javascript">
- $(document).ready(function(){
-    $("#nav").on("click","a", function (event) {
-        event.preventDefault();
-        var id  = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1000);
-    });
-});
-</script>
+    <script>
+        $(document).ready(function() {
+            $("#nav").on("click", "a", function(event) {
+                event.preventDefault();
+                var id = $(this).attr('href'),
+                    top = $(id).offset().top;
+                $('body,html').animate({
+                    scrollTop: top
+                }, 1000);
+            });
+        });
+    </script>
     <script>
         jQuery(document).ready(function($) {
             $('.types__list').matchHeight();
