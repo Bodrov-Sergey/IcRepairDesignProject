@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- инструкция для интеренет эксплорера -->
-    <meta htpp-equiv="X-UA-Compatible" content="IE-edge">
+    <meta httpp-equiv="X-UA-Compatible" content="IE-edge">
 
 
     <!-- нормализация стилей -->
@@ -66,13 +66,13 @@
             <section class="content__projects projects" id="projects">
                 <div class="projects__container container">
                     <nav class="projects__nav nav">
+                        <span class="icon-arrowL nav__arrow nav__arrow_L"></span>
                         <ul class="nav__list">
-                            <span class="icon-arrowL nav__arrow nav__arrow_L"></span>
                             <li class="nav__item nav__item_active title nav__item_admiral">Rostov-on-Don, Admiral</li>
                             <li class="nav__item title nav__item_thieves">Sochi Thieves</li>
                             <li class="nav__item title nav__item_patriotic">Rostov-on-Don Patriotic</li>
-                            <span class="icon-arrowR nav__arrow nav__arrow_R"></span>
                         </ul>
+                        <span class="icon-arrowR nav__arrow nav__arrow_R"></span>
                     </nav>
                     <h2 class="projects__title title">Completed<br>projects</h2>
                     <p class="projects__description">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction
@@ -127,12 +127,12 @@
                         <br>Leave a request below and you will receive a link to the broadcast.</p>
                     <form method="post" action="#" name="user__form" enctype="text/plain" class="measurement__form form" autocomplete="off">
                         <div class="form__item form__item_name-measurement">
-                            <label for="name" class="form__label label label_measurement">Name</label>
-                            <input type="text" class="input input_measurement" name="fname" placeholder="What is your name:">
+                            <label for="measurement__name" class="form__label label label_measurement">Name</label>
+                            <input type="text" class="input input_measurement" name="fname" id="measurement__name" placeholder="What is your name:">
                         </div>
                         <div class="form__item form__item_phone-measurement">
-                            <label for="phone" class="form__label label label_measurement">Phone</label>
-                            <input type="tel" class="input input_measurement" name="phone" placeholder="Your phone number:">
+                            <label for="measurement__phone" class="form__label label label_measurement">Phone</label>
+                            <input type="tel" class="input input_measurement" name="phone" id="measurement__phone"  placeholder="Your phone number:">
                         </div>
                         <div class="form__item form__item_button-measurement">
                             <button type="submit" class="form__button button">Submit</button>
@@ -207,12 +207,12 @@
                         <div class="request__body">
                             <form method="post" action="#" name="user__form" enctype="text/plain" class="request__form call" autocomplete="off">
                                 <h2 class="call__title">Leave a request for free<br>departure of the measurer</h2>
-                                <label for="name" class="call__label label">Name</label>
-                                <input type="text" name="fname" placeholder="What is your name:" class="call__input input">
-                                <label for="phone" class="call__label label">Phone</label>
-                                <input type="tel" class="call__input input" name="phone" placeholder="Your phone number:">
-                                <label for="email" class="call__label label">Email</label>
-                                <input type="email" class="call__input call__input_email input" name="email" placeholder="Your email:">
+                                <label for="request__name" class="call__label label">Name</label>
+                                <input type="text" id="request__name" name="fname" placeholder="What is your name:" class="call__input input">
+                                <label for="request__phone" class="call__label label">Phone</label>
+                                <input type="tel" id="request__phone" class="call__input input" name="phone" placeholder="Your phone number:">
+                                <label for="request__email" class="call__label label">Email</label>
+                                <input type="email" id="request__email" class="call__input call__input_email input" name="email" placeholder="Your email:">
                                 <div class="call__item">
                                     <input id="teamCheckbox" type="checkbox" name="agreement" class="form__checkbox_team checkbox">
                                     <label for="teamCheckbox" class="call__checkbox-label_team checkbox-label">I agree to the processing of personal data</label>
@@ -385,16 +385,16 @@
                     <form method="post" action="#" name="user__form" enctype="text/plain" autocomplete="off" class="contacts__form questions">
                         <h2 class="questions__subtitle subtitle">have any questions?</h2>
                         <div class="questions__name">
-                            <label for="name" class="questions__label label">Name</label>
-                            <input type="text" name="fname" placeholder="What is your name:" class="questions__input input">
+                            <label for="contacts__name" class="questions__label label">Name</label>
+                            <input type="text" id="contacts__name" name="fname" placeholder="What is your name:" class="questions__input input">
                         </div>
                         <div class="qestions__phone">
-                            <label for="phone" class="questions__label label">Phone</label>
-                            <input type="tel" class="questions__input input" name="phone" placeholder="Your phone number:">
+                            <label for="contacts__phone" class="questions__label label">Phone</label>
+                            <input type="tel" id="contacts__phone" class="questions__input input" name="phone" placeholder="Your phone number:">
                         </div>
                         <div class="questions__question">
-                            <label for="question" class="questions__label label">Question</label>
-                            <input type="text" class="questions__input input" name="question" placeholder="I want to know:">
+                            <label for="contacts__question" class="questions__label label">Question</label>
+                            <input type="text" id="contacts__question" class="questions__input input" name="question" placeholder="I want to know:">
                         </div>
                         <div class="questions__checkbox">
                             <input id="questionsCheckbox" type="checkbox" name="agreement" class="form__checkbox_questions checkbox">
@@ -406,7 +406,8 @@
                     </form>
                     <div class="contacts__ifo">
                         <p class="contacts__adress title">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum</p>
-                        <p class="contacts__tel title">Tel <a href="tel:+79287683239" class="contacts__phone">+7 (928) 768-32-39</a></p>
+                        <p class="contacts__tel title">Tel <a href="tel:+79287683239" class="contacts__phone">+7 (928) 768-32-39</a>
+                        </p>
                         <div class="contacts__link">
                             <a href="mailto:info@modernist.su" class="contacts__mail icon-mail"></a>
                             <a href="https://www.instagram.com/decorum_rostov/" target="_blank" class="contacts__inst icon-instagram"></a>
@@ -445,21 +446,21 @@
             </div>
         </footer>
     </div>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script src="jquery.matchHeight.js" type="text/javascript"></script>
-    <script type="text/javascript">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="jquery.matchHeight.js"></script>
+    <script>
         jQuery(document).ready(function($) {
             $('.types__list').matchHeight();
         });
     </script>
-    <script type="text/javascript">
+    <script>
         jQuery(document).ready(function($) {
             $('.clients__content').matchHeight();
         });
     </script>
-    <script type="text/javascript">
+    <script>
         var map;
         var marker;
 
